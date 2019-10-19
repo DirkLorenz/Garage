@@ -1,0 +1,41 @@
+// kommentar
+
+doctype html
+html
+  head
+    style.
+      div {
+      background-color: lightgray;
+      width: 250px;
+      border: 1px solid green;
+        font-size: 220%;
+        border-radius: 10px;
+      padding: 20px;
+      }
+    meta(http-equiv='expires', content='0')
+    meta(http-equiv='pragma', content='no-cache')
+    meta(http-equiv='refresh' content='10')
+    title= title
+  body
+    h1= title
+    form
+        input(
+            style="width: 300px; \
+            padding: 20px;  \
+            font-weight: bold; \
+            background: lightgray; \
+            color: #000; \
+            border-radius: 10px; \
+            border: 1px solid #999; \
+            font-size: 150%;" 
+            type="button" 
+            value="Toggle State"
+            onclick="location.href='http://192.168.178.33:3000/do'"
+        ) 
+    p
+    div= status
+    p
+    img(src='http://192.168.178.33:8080/Door.jpg', width='640', height='480', title='Status')
+    p= timeInfo
+    
+    

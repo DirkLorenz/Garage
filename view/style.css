@@ -1,0 +1,54 @@
+div.gallery {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.box {
+    display: inline-block;
+    margin: 20px;
+    background-color: rgba(43, 104, 139, 0.685);
+    border: 1px solid #ccc;
+    width: 150px; 
+  }
+
+
+.button {
+    width: 90px;
+    background-color: rgba(43, 104, 139, 0.685);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 20px;
+    cursor: pointer;
+  }
+
+
+body {
+    font-family: "Arial", Arial, sans-serif;
+    background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
