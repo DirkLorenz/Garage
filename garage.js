@@ -65,6 +65,7 @@ class Door {
     if ((valueOpen === 1) && (valueClose === 1)) {
       this.State = 'UNDEFINED';
     }
+    console.log('valuec: ', valueClose,'Valueopen', valueOpen);
   }
 
   SetText() {
@@ -103,13 +104,14 @@ function timer() {
     SunRS.SunRise = new Date(parsedData.results.sunrise)
     SunRS.SunSet = new Date(parsedData.results.sunset)
     console.log(SunRS.SunRise)
-    console.log(new Date())
-    console.log(SunRS.SunSet)
+    console.log(new Date());
+    console.log(SunRS.SunSet);
+    console.log(myDoor.State);
     var now = new Date()
     if ((SunRS.SunRise <= now) && (SunRS.SunSet >= now)) {
       console.log('No Mail')
     } else {
-        if((myDoor.State = 'OPEN') && (++WiederHolung % 10 === 0)) {
+        if((myDoor.State === 'OPEN') && (++WiederHolung % 10 === 0)) {
             WiederHolung = 0;
             console.log('send Mail');
             transporter.sendMail(mailOptions, function (err, info) {
