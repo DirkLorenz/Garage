@@ -2,7 +2,7 @@ div.gallery {
     margin: 20px;
     border: 1px solid #ccc;
     float: left;
-    width: 150px;
+    width: 900px;
   }
   
   div.gallery:hover {
@@ -24,12 +24,12 @@ div.gallery {
     margin: 20px;
     background-color: rgba(43, 104, 139, 0.685);
     border: 1px solid #ccc;
-    width: 150px; 
+    width: 900px; 
   }
 
 
 .button {
-    width: 90px;
+    width: 200px;
     background-color: rgba(43, 104, 139, 0.685);
     border: none;
     color: white;
@@ -37,8 +37,8 @@ div.gallery {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 10px 20px;
+    font-size: 36px;
+    margin: 8px 350px;
     cursor: pointer;
   }
 
