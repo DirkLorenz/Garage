@@ -84,6 +84,7 @@ class Door {
 garage.set('view engine', 'pug');
 garage.set('views', './view');
 let myDoor = new Door();
+myDoor.GetState();
 
 let myCamera = new PiCamera({
   mode: 'photo',
